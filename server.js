@@ -16,6 +16,6 @@ const database = new mongo();
 
 const port = 5001;
 const webServer = app.listen(port, () => {
-    console.log(`Server running on port: ${port}`); 
+    console.log(`DeviceService running on port: ${port}`); 
 });
 

@@ -1,9 +1,8 @@
-﻿import mq from '../../mq/sender';
+﻿import mq from '../../pkg/mq/sender';
 
-const add = async (request, result) => {
+const receive = async (request, result) => {
     try {
-        // Save in storage
-        console.log('position.Storage');
+        console.log('position.receive');
         console.log(request.body);
 
         request.body.Source = 'DeviceService';
@@ -21,4 +20,4 @@ const add = async (request, result) => {
     }
 };
 
-export default { add };
+export default { receive };
