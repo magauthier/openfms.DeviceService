@@ -1,16 +1,17 @@
 {
-  "name": "fms.deviceservice",
+  "name": "openfms.deviceservice",
   "version": "1.0.0",
-  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "description": "Manage every transactions from Devices",
   "main": "startesm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "port": 5001,
   "repository": {
     "type": "git",
-    "url": "https://etlelectronique.visualstudio.com/Astus%20Garage/_git/fms.DeviceService"
+    "url": "git+https://github.com/marcandregauthier/openfms.DeviceService.git"
   },
-  "author": "",
+  "author": "marcgauthier",
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.5.6",

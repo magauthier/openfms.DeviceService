@@ -16,7 +16,6 @@ const get = async (request, response) => {
 
 const add = async (request, response) => {
     console.log(`device.add: ${JSON.stringify(request.body)}`);
-    request.body.Source = 'DeviceService';
 
     Repository.add(Model, request.body)
         .then(result => {

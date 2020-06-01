@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 app.use('/', router);
 const database = new mongo();
 
-const port = 5001;
+const port = require('./package.json').port;
 const webServer = app.listen(port, () => {
-    console.log(`DeviceService running on port: ${port}`); 
+    console.log(`${require('./package.json').name}: ${port}`); 
 });
 

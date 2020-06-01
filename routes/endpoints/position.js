@@ -5,7 +5,7 @@ const receive = async (request, result) => {
         console.log('position.receive');
         console.log(request.body);
 
-        request.body.Source = 'DeviceService';
+        request.body.Source = require('../../package.json').name;
 
         // Send to other microservices
         console.log('position.MQ');
